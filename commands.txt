@@ -13,10 +13,6 @@ git remote -v
 origin  https://github.com/jayakrishna1204/Stop-Sign-Detection.git (fetch)
 origin  https://github.com/jayakrishna1204/Stop-Sign-Detection.git (push)
 
-git remote set-url origin https://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@github.com/jayakrishna1204/Stop-Sign-Detection.git
-after origin I generalize token valid april 28,2024 create new token
-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
-
 
 
 exist old mail address change main mail address
