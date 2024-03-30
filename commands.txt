@@ -1,0 +1,110 @@
+git remote rm origin
+# error: remote origin already exists.
+git remote add origin https://github.com/jayakrishna1204/Stop-Sign-Detection.git
+
+"""
+git push -u origin main
+remote: Permission to jayakrishna1204/Stop-Sign-Detection.git denied to jayakrishna1509.
+fatal: unable to access 'https://github.com/jayakrishna1204/Stop-Sign-Detection.git/': The requested URL returned error: 403
+"""
+
+Solution
+git remote -v
+origin  https://github.com/jayakrishna1204/Stop-Sign-Detection.git (fetch)
+origin  https://github.com/jayakrishna1204/Stop-Sign-Detection.git (push)
+
+git remote set-url origin https://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@github.com/jayakrishna1204/Stop-Sign-Detection.git
+after origin I generalize token valid april 28,2024 create new token
+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
+
+
+
+exist old mail address change main mail address
+git push -u origin main 
+
+PS F:\Stop Sign Detection> git log
+commit 21ebd47df3fefdbd0c0ffaf8850f2c23aa14dc8d (HEAD -> main, origin/main)
+Author: jayakrishna2015 <jayakrishnapillagolla90598@gmail.com>
+Date:   Sat Mar 30 06:47:45 2024 +0530
+
+    first commit
+
+commit de93afe27ce512d3c3d397fb01f8c6ccdec41fc5
+Author: PILLAGOLLA JAYAKRISHNA <jayakrishnap1509@gmail.com>
+Date:   Sat Mar 30 06:33:21 2024 +0530
+
+    Initial commit
+
+
+Solution
+
+git config --global user.email {Check Mail}
+git config --global user.email "jayakrishnap1509@gmail.com"
+git config --global user.email
+
+git config user.email "jayakrishnap1509@gmail.com"
+git push origin main --force
+info: please complete authentication in your browser...
+Everything up-to-date
+
+check -> git log
+no change
+git config --global user.email "jayakrishnap1509@gmail.com"
+git filter-branch --env-filter '
+>> if [ "$GIT_COMMITTER_EMAIL" = "jayakrishnapillagolla90598@gmail.com" ]
+>> then
+>>     export GIT_COMMITTER_EMAIL="jayakrishnap1509@gmail.com"
+>> fi
+>> if [ "$GIT_AUTHOR_EMAIL" = "jayakrishnapillagolla90598@gmail.com" ]
+>> then
+>>     export GIT_AUTHOR_EMAIL="jayakrishnap1509@gmail.com"
+>> fi
+>> ' -- --all
+
+
+check -> git log
+mail update username not update same message
+commit 9b61440ac7610e36d34efce21a159551cd7810d6 (HEAD -> main, origin/main)
+Author: jayakrishna2015 <jayakrishnap1509@gmail.com>
+Date:   Sat Mar 30 06:47:45 2024 +0530
+
+    first commit
+
+commit 31845d8c93cc0cc65caad5598178f2595a948ffa
+Author: PILLAGOLLA JAYAKRISHNA <jayakrishnap1509@gmail.com>
+Date:   Sat Mar 30 06:33:21 2024 +0530
+
+    Initial commit
+
+
+git config --global user.name "jayakrishna1204"
+git config --global user.email "jayakrishnap1509@gmail.com"
+git filter-branch -f --env-filter '
+>> if [ "$GIT_AUTHOR_EMAIL" = "jayakrishnap1509@gmail.com" ]
+>> then
+>>     export GIT_AUTHOR_NAME="jayakrishna1204"
+>> fi
+>> ' -- --all
+
+git push origin main --force
+
+check -> git log
+commit cd82d9482672e278b120bb1ad45503b5c6ee2c76 (HEAD -> main, origin/main)
+Author: jayakrishna1204 <jayakrishnap1509@gmail.com>
+Date:   Sat Mar 30 06:47:45 2024 +0530
+
+    first commit
+
+commit e91a1b511e44e9c43170e3ae7771761572f03cd5
+Author: jayakrishna1204 <jayakrishnap1509@gmail.com>
+Date:   Sat Mar 30 06:33:21 2024 +0530
+
+    Initial commit
+
+Author: username update and email update
+
+
+SSH Key : ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0jkzGEI7ndMvomAJVG0xxz2iUl/nAkyBia5AgeYPuB jayakrishnap1509@gmail.com
+
+
+
