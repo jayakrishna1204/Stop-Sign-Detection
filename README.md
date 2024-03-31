@@ -1,4 +1,4 @@
-# Stop-Sign-Detection
+# Stop-Sign-Detection  - (Python Core Basic)
 
 OpenCV Python.
 
